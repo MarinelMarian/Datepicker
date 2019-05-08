@@ -1,0 +1,94 @@
+.moment-picker {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.moment-picker th,
+.moment-picker td {
+  text-shadow: none;
+  border-radius: 0;
+  vertical-align: middle;
+  background-clip: initial;
+  font-weight: bold;
+}
+.moment-picker td {
+  border: 1px solid #f7f7f7;
+}
+.moment-picker td.disabled {
+  font-weight: 100;
+  background: #f0f0f0 !important;
+  color: #cecece !important;
+  pointer-events: none !important;
+}
+.moment-picker td.disabled:hover {
+  background: #f0f0f0 !important;
+  color: #cecece !important;
+}
+.moment-picker .moment-picker-container {
+  text-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  min-width: 250px;
+  width: 100%;
+  background: #ffffff;
+  color: #4a4a4a;
+  border: 1px solid #ced2d2;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.1);
+}
+.moment-picker .header-view th {
+  color: #ffffff;
+  background: #4a4a4a;
+  border-radius: 0;
+  min-width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.moment-picker .header-view th:hover,
+.moment-picker .header-view td:hover {
+  background-color: #7d7d7d;
+}
+.moment-picker .moment-picker-specific-views td:hover {
+  color: #ffffff !important;
+  background: #11d3f4 !important;
+}
+.moment-picker .moment-picker-specific-views td.selected {
+  color: #ffffff;
+  background: #078398;
+  border-color: inherit;
+}
+.moment-picker .moment-picker-specific-views td.today {
+  color: #09adc9;
+  background: #ffffff;
+}
+.moment-picker .decade-view td,
+.moment-picker .year-view td {
+  min-width: 60px;
+  height: 60px;
+}
+.moment-picker .month-view .moment-picker-specific-views {
+  padding: 0;
+}
+.moment-picker .month-view .moment-picker-specific-views thead {
+  color: #bfbfbf;
+  background: #4a4a4a;
+}
+.moment-picker .month-view .moment-picker-specific-views thead th {
+  font-size: 12px;
+  font-weight: 100;
+}
+.moment-picker .month-view .moment-picker-specific-views td {
+  min-width: 33px;
+  height: 33px;
+}
+.moment-picker .day-view td,
+.moment-picker .hour-view td {
+  min-width: 60px;
+  height: 40px;
+}
+.moment-picker .minute-view table {
+  border-spacing: 2px;
+}
+.moment-picker .minute-view td {
+  min-width: 40px;
+  height: 40px;
+}
