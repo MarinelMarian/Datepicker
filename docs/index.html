@@ -33,23 +33,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
     <script src="https://rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.js"></script>
-    <script>
-	    angular
-  .module('Demo', ['moment-picker'])
-  .controller('DemoController', ['$scope', function () {
-    var ctrl = this;
-    ctrl.minDateString = moment('2019-04-15').format('YYYY-MM-DD');
-    ctrl.maxDateString = moment('2020-08-15').format('YYYY-MM-DD');
-    
-    // disable all Sundays in the Month View
-    ctrl.isSelectable = function (date, type) {
-      //console.log(date);
-      //console.log(type);
-      var month = date.month()+1;
-      return month < 6 || month > 7 
-      //return type != 'day' || date.format('dddd') != 'Sunday';
-    };
-  }]);
-   </script>
+    <script src="script.js"></script>
 </body>
 </html>
