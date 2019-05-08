@@ -26,7 +26,8 @@
            start-view="year"
            selectable="ctrl.isSelectable(date, type)"
            ng-model="ctrl.momentDate"
-           ng-model-options="{ updateOn: 'blur' }"></div>
+           ng-model-options="{ updateOn: 'blur' }"
+	  			 style="width:300px"></div>
 		<br/>
     {{ctrl.momentDate.format('DD-MM-YYYY')}}
     
