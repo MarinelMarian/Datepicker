@@ -12,6 +12,8 @@
   </head>
   <body ng-app="Demo" ng-cloak style="padding:20px;"
         ng-controller="DemoController as ctrl">
+	      {{ctrl.momentDate.format('DD-MM-YYYY')}}
+	  <br/>
     <div style="width:300px; position:absolute;">
     	<div   locale="nl"
 						 moment-picker="ctrl.stringDate"
@@ -30,8 +32,8 @@
 			</div>
 		</div>
 	    
-		<br/>
-    {{ctrl.momentDate.format('DD-MM-YYYY')}}
+		
+
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
