@@ -12,22 +12,24 @@
   </head>
   <body ng-app="Demo" ng-cloak style="padding:20px;"
         ng-controller="DemoController as ctrl">
-    
-    <div   locale="nl"
-           moment-picker="ctrl.stringDate"
-           today="false"
-           min-view="year"
-           max-view="day"
-           min-date="ctrl.minDateString"
-           max-date="ctrl.maxDateString"
-           locale="en"
-           inline="true"
-           format="YYYY-MM-DD"
-           start-view="year"
-           selectable="ctrl.isSelectable(date, type)"
-           ng-model="ctrl.momentDate"
-           ng-model-options="{ updateOn: 'blur' }"
-	  			 style="width:300px"></div>
+    <div style="width:300px; position:absolute;">
+    	<div   locale="nl"
+						 moment-picker="ctrl.stringDate"
+						 today="false"
+						 min-view="year"
+						 max-view="day"
+						 min-date="ctrl.minDateString"
+						 max-date="ctrl.maxDateString"
+						 locale="en"
+						 inline="true"
+						 format="YYYY-MM-DD"
+						 start-view="year"
+						 selectable="ctrl.isSelectable(date, type)"
+						 ng-model="ctrl.momentDate"
+						 ng-model-options="{ updateOn: 'blur' }">
+			</div>
+		</div>
+	    
 		<br/>
     {{ctrl.momentDate.format('DD-MM-YYYY')}}
     
